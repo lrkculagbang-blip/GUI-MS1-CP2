@@ -308,7 +308,7 @@ public class MotorPHPayrollSystem extends JFrame {
 
             while ((l = br.readLine()) != null) {
 
-                String[] d = l.split(",");
+                String[] d = l.replace("\"", "").split(",");
 
                 empNo.add(Integer.parseInt(d[0]));
                 name.add(d[2] + " " + d[1]);
